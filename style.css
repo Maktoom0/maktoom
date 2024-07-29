@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'fontawesome';
+    letter-spacing: 2px;
+}
+
+/* -------- Header  -------- */
+
+header {
+    background-color: #0d1b2a;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+header .logo-container {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo-container img {
+    width: 100%;
+}
+
+header > a {
+    letter-spacing: 5px;
+    font-size: 1.6rem;
+    background: linear-gradient(90deg, #ff00f3, #0033ff, #ff0000, #0033ff, #ffff00, #ff00f3);
+    background-size: 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: changeIconColor 15s linear infinite;
+}
+
+header .nav-bar span {
+    color: #e0e1dd;
+    margin: 0px 20px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+}
+
+header .nav-bar span:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    background-color: #ff00f3;
+    transition: 0.3s;
+}
+
+header .nav-bar span:hover:after {
+    width: 100%;
+}
+
+header .fa-bars {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #e0e1dd;
+    cursor: pointer;
+    padding: 10px;
+}
+
+header .nav-dropdown {
+    position: absolute;
+}
+
+.header-down-section {
+    display: none;
+    width: 100%;
+    height: 60px;
+    background-color: #415a77;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-down-section span {
+    color: #e0e1dd;
+    margin: 0px 20px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+}
+
+.header-down-section span::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    background-color: #ff00f3;
+    transition: 0.3s;
+}
+
+.header-down-section span:hover:after {
+    width: 100%;
+}
+
+/* -------- Home  -------- */
+
+.home {
+    height: calc(100vh - 60px);
+}
+
+
+
+/* -------- Keyframes && Media  -------- */
+
+@keyframes changeIconColor {
+    0% {background-position: 0%;}
+    100% {background-position: 400%;}
+}
+
+@media (max-width: 950px) {
+    header .nav-bar {
+        display: none;
+    }
+
+    .header-down-section {
+        display: flex;
+    }
+
+    .home {
+        height: calc(100vh - 120px);
+    }
+}
+
+@media (max-width: 500px) {
+    .header-down-section span {
+        margin: 0px 10px;
+        font-size: .9rem;
+    }
+}
