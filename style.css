@@ -113,9 +113,38 @@ header .nav-dropdown {
 
 .home {
     height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #778da9;
 }
 
+.home > div {
+    width: 40%;
+}
 
+.home div:nth-child(1) p:nth-child(1) {
+    font-size: 2.5rem;
+}
+
+.home div:nth-child(1) p:nth-child(1) span {
+    color: #e0e1dd;
+}
+
+.home div:nth-child(1) p:nth-child(2) {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.home div:nth-child(1) a {
+    text-decoration: none;
+    color: #0d1b2a;
+    background-color: #e0e1dd;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+}
 
 /* -------- Keyframes && Media  -------- */
 
