@@ -73,6 +73,66 @@ header .fa-bars {
     padding: 10px;
 }
 
+header .fa-bars:hover ~ .header-dropdown-menu {
+    display: block;
+}
+
+header .header-dropdown-menu {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1b263b;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: none;
+    z-index: 10;
+}
+
+header .header-dropdown-menu:hover {
+    display: block;
+}
+
+header .header-dropdown-menu a,
+header .header-dropdown-menu button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    font-size: 1rem;
+}
+
+header .header-dropdown-menu a:hover,
+header .header-dropdown-menu button:hover {
+    background-color: #415a77;
+}
+
+header .header-dropdown-menu a i,
+header .header-dropdown-menu button i {
+    color: #e0e1dd;
+}
+
+header .header-dropdown-menu a p,
+header .header-dropdown-menu button p {
+    color: #e0e1dd;
+}
+
+header .header-dropdown-menu a {
+    text-decoration: none;
+}
+
+header .header-dropdown-menu a img {
+    height: 50%;
+}
+
+header .header-dropdown-menu button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
 header .nav-dropdown {
     position: absolute;
 }
@@ -123,8 +183,13 @@ header .nav-dropdown {
     width: 40%;
 }
 
+.home div:nth-child(1) {
+    padding: 10px;
+}
+
 .home div:nth-child(1) p:nth-child(1) {
     font-size: 2.5rem;
+    line-height: 60px;
 }
 
 .home div:nth-child(1) p:nth-child(1) span {
@@ -132,7 +197,6 @@ header .nav-dropdown {
 }
 
 .home div:nth-child(1) p:nth-child(2) {
-    font-size: 1.2rem;
     margin-top: 15px;
 }
 
@@ -141,9 +205,30 @@ header .nav-dropdown {
     color: #0d1b2a;
     background-color: #e0e1dd;
     padding: 20px 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     display: block;
-    width: 300px;
+    width: 250px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    animation: download-btn-animation 2s infinite;
+}
+
+.home div:nth-child(1) a i {
+    margin-left: 10px;
+}
+
+.home div:nth-child(2) {
+    text-align: center;
+}
+
+.home div:nth-child(2) img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.home div:nth-child(2) p {
+    margin-top: 10px;
 }
 
 /* -------- Keyframes && Media  -------- */
@@ -151,6 +236,12 @@ header .nav-dropdown {
 @keyframes changeIconColor {
     0% {background-position: 0%;}
     100% {background-position: 400%;}
+}
+
+@keyframes download-btn-animation {
+    0% {background-color: #e0e1dd; color: black;}
+    50% {background-color: #415a77; color: #e0e1dd;}
+    100% {background-color: #e0e1dd; color: black;}
 }
 
 @media (max-width: 950px) {
@@ -164,6 +255,22 @@ header .nav-dropdown {
 
     .home {
         height: calc(100vh - 120px);
+    }
+
+    .home div:nth-child(1) {
+        width: auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .home div:nth-child(1) a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .home div:nth-child(2) {
+        display: none;
     }
 }
 
