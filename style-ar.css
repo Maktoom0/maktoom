@@ -1,0 +1,31 @@
+* {
+    font-weight: 700;
+}
+
+header > a {
+    font-weight: 500;
+}
+
+header .logo-container {
+    right: 10px;
+}
+
+header .fa-bars {
+    left: 20px;
+}
+
+header .header-dropdown-menu {
+    left: 30px;
+}
+
+header .header-dropdown-menu a:nth-child(1) p {
+    letter-spacing: 2px;
+}
+
+.home div:nth-child(1) a {
+    font-size: 1.3rem;
+}
+
+.home div:nth-child(1) a i {
+    margin-right: 20px;
+}

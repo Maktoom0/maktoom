@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'fontawesome';
-    letter-spacing: 2px;
+    font-family: 'fontawesome', 'cairo';
 }
 
 /* -------- Header  -------- */
@@ -21,7 +20,6 @@ header .logo-container {
     width: 60px;
     height: 100%;
     position: absolute;
-    left: 10px;
     display: flex;
     align-items: center;
 }
@@ -43,30 +41,18 @@ header > a {
 
 header .nav-bar span {
     color: #e0e1dd;
-    margin: 0px 20px;
+    margin: 0px 10px;
     cursor: pointer;
-    padding: 5px;
-    position: relative;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
-header .nav-bar span:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    height: 3px;
-    background-color: #ff00f3;
-    transition: 0.3s;
-}
-
-header .nav-bar span:hover:after {
-    width: 100%;
+header .nav-bar span:hover {
+    background-color: #415a77;
 }
 
 header .fa-bars {
     position: absolute;
-    right: 20px;
     font-size: 1.5rem;
     color: #e0e1dd;
     cursor: pointer;
@@ -83,8 +69,7 @@ header .header-dropdown-menu {
     border-radius: 20px;
     background-color: #1b263b;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 40px;
     display: none;
     z-index: 10;
 }
@@ -148,25 +133,15 @@ header .nav-dropdown {
 
 .header-down-section span {
     color: #e0e1dd;
-    margin: 0px 20px;
+    margin: 0px 10px;
     cursor: pointer;
-    padding: 5px;
-    position: relative;
+    padding: 10px 15px;
+    border-radius: 10px;
+    line-height: 16px;
 }
 
-.header-down-section span::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    height: 3px;
-    background-color: #ff00f3;
-    transition: 0.3s;
-}
-
-.header-down-section span:hover:after {
-    width: 100%;
+.header-down-section span:hover {
+    background-color: #1b263b;
 }
 
 /* -------- Home  -------- */
@@ -212,10 +187,6 @@ header .nav-dropdown {
     margin-top: 20px;
     color: black;
     animation: download-btn-animation 2s infinite;
-}
-
-.home div:nth-child(1) a i {
-    margin-left: 10px;
 }
 
 .home div:nth-child(2) {
