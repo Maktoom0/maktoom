@@ -14,6 +14,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    transition: 1s;
 }
 
 header .logo-container {
@@ -69,7 +70,7 @@ header .header-dropdown-menu {
     border-radius: 20px;
     background-color: #1b263b;
     position: absolute;
-    top: 40px;
+    top: 35px;
     display: none;
     z-index: 10;
 }
@@ -97,6 +98,10 @@ header .header-dropdown-menu button:hover {
 header .header-dropdown-menu a i,
 header .header-dropdown-menu button i {
     color: #e0e1dd;
+}
+
+header .header-dropdown-menu button .fa-sun {
+    display: none;
 }
 
 header .header-dropdown-menu a p,
@@ -133,7 +138,7 @@ header .nav-dropdown {
 
 .header-down-section span {
     color: #e0e1dd;
-    margin: 0px 10px;
+    margin: 0px 5px;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 10px;
@@ -152,6 +157,7 @@ header .nav-dropdown {
     align-items: center;
     justify-content: space-evenly;
     background-color: #778da9;
+    transition: 1s;
 }
 
 .home > div {
@@ -186,7 +192,7 @@ header .nav-dropdown {
     text-align: center;
     margin-top: 20px;
     color: black;
-    animation: download-btn-animation 2s infinite;
+    animation: download-btn-animation 1.5s infinite;
 }
 
 .home div:nth-child(2) {
@@ -247,7 +253,6 @@ header .nav-dropdown {
 
 @media (max-width: 500px) {
     .header-down-section span {
-        margin: 0px 10px;
-        font-size: .9rem;
+        font-size: .8rem;
     }
 }
