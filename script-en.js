@@ -9,7 +9,6 @@ const dropdownMenu = document.querySelector('header .header-dropdown-menu')
 const moonIcon = document.querySelector('header .header-dropdown-menu button .fa-moon')
 const sunIcon = document.querySelector('header .header-dropdown-menu button .fa-sun')
 const allText = document.querySelectorAll('.text')
-// allText.style.color = 'black'
 
 let lightMode = true;
 
@@ -18,7 +17,6 @@ themesBtn.addEventListener(('click'), () => {
     if (lightMode === false){
         themesBtnText.textContent = 'light mode'
         upHeader.style.backgroundColor = '#778DA9'
-        // upHeader.style.transition = '1s'
         home.style.backgroundColor = '#1B263B'
         dropdownMenu.style.backgroundColor = '#0D1B2A'
         moonIcon.style.display = 'none'
