@@ -6,16 +6,8 @@ header .logo-container {
     left: 10px;
 }
 
-header .fa-bars {
-    right: 20px;
-}
-
-header .header-dropdown-menu {
-    right: 30px;
-}
-
-header .header-dropdown-menu a:nth-child(1) p {
-    letter-spacing: 0px;
+header a.translate {
+    right: 10px;
 }
 
 .home div:nth-child(1) a i {
