@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png">
+    <title>Maktoom</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="assets/icon.png" alt="Maktoom Icon">
+            <h2>maktoom</h2>
+        </div>
+    </header>
+    <section class="hero">
+        <p>"طريقك لترجمة "لغة الإشارة</p>
+        <div class="translator-tts">
+            <div class="tts-header">
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="ready-sentences">
+                    <button class="s-btn" data-word="السلام عليكم ورحمة الله وبركاته">السلام عليكم ورحمة الله وبركاته</button>
+                    <button class="s-btn" data-word="الحمد لله">الحمد لله</button>
+                    <button class="s-btn" data-word="الله يحفظك">الله يحفظك</button>
+                    <button class="s-btn" data-word="بتاعتي">بتاعتي</button>
+                    <button class="s-btn" data-word="بتاعتك">بتاعتك</button>
+                    <button class="s-btn" data-word="اسم">اسم</button>
+                    <button class="s-btn" data-word="ما شاء الله">ما شاء الله</button>
+                    <button class="s-btn" data-word="صباح الخير">صباح الخير</button>
+                    <button class="s-btn" data-word="مساء الخير">مساء الخير</button>
+                    <button class="s-btn" data-word="عامل إيه">عامل إيه؟</button>
+                    <button class="s-btn" data-word="إيه">إيه؟</button>
+                    <button class="s-btn" data-word="أنا">أنا</button>
+                    <button class="s-btn" data-word="أنت">أنت</button>
+                    <button class="s-btn" data-word="وحشتني">وحشتني</button>
+                    <button class="s-btn" data-word="شكرا">شكرا</button>
+                    <button class="s-btn" data-word="مع السلامة">مع السلامة</button>
+                </div>
+                <div>
+                    <img src="assets/egypt.webp" alt="Egypt Flag">
+                    <span>العربية</span>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div>
+                    <i class="fa-solid fa-hands-asl-interpreting"></i>
+                    <span>لغة الإشارة</span>
+                </div>
+            </div>
+
+            <div class="tts-main">
+                <div class="translation">
+                    <video id="v1" class="player active" muted playsinline></video>
+                    <video id="v2" class="player" muted playsinline></video>
+                </div>
+                <div class="input-area">
+                    <textarea name="text-input" id="arabicInput" dir="rtl" placeholder="أكتب هنا..."></textarea>
+                    <div class="tts-buttons">
+                        <button class="start-translating" id="startTranslating">ابدأ الترجمة</button>
+                        <button class="mic"><i class="fa-solid fa-microphone"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
